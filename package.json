@@ -1,10 +1,10 @@
 {
   "main": "index.py",
   "engine": "python3",
-  "name": "rinobot-plugin-parse-log",
-  "description": "Parses .log files into metadata",
+  "name": "rinobot-plugin-parse-bruker-log",
+  "description": "Parses .log files from Bruker systems into metadata",
   "version": "0.0.1",
-  "repository": "https://github.com/rinocloud/rinobot-plugin-parse-log.git",
+  "repository": "https://github.com/rinocloud/rinobot-plugin-parse-bruker-log.git",
   "author": "eoin murray",
   "license": "MIT",
   "keywords": [
