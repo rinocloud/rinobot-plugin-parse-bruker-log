@@ -3,7 +3,7 @@
   "engine": "python3",
   "name": "rinobot-plugin-parse-bruker-log",
   "description": "Parses .log files from Bruker systems into metadata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "eoin murray",
   "license": "MIT",
   "repository": "https://github.com/rinocloud/rinobot-plugin-parse-bruker-log.git",
