@@ -1,13 +1,13 @@
-import sys
+import rinobot_plugin as bot
 import ast
-import os
 import yaml
 
-def main(filepath):
-    filepath_without_ext = os.path.splitext(filepath)[0]
+def main():
+    filepath = bot.filepath()
+
     obj = {}
 
-    with open(sys.argv[1]) as f:
+    with open(filepath) as f:
         for line in f.readlines():
             if '[' not in line and ']' not in line:
                 x, y = line.split('=')
@@ -17,9 +17,11 @@ def main(filepath):
                     y = y.strip()
                 obj[x.strip()] = y
 
-    with open(filepath_without_ext + '.yaml', 'w') as outfile:
+    outname = bot.no_extension() + '.yaml'
+    outpath = bot.output_filepath(outname)
+
+    with open(outpath, 'w') as outfile:
         outfile.write(yaml.dump(obj, default_flow_style=False))
 
-
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()
