@@ -7,8 +7,9 @@
   "author": "eoin murray",
   "license": "MIT",
   "scripts": {
-    "postinstall": "pip install rinobot_plugin --upgrade"
+    "postinstall": "pip install rinobot-plugin --upgrade"
   },
+  "options": {},
   "repository": "https://github.com/rinocloud/rinobot-plugin-parse-bruker-log.git",
   "keywords": [
     "rinobot",
